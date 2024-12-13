@@ -1,0 +1,136 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Estilos base para móviles */
+#root {
+  padding: 0.8rem;
+}
+
+.carousel-item img {
+  max-height: 24vh;
+  max-width: 24vh;
+}
+
+.carousel {
+  height: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+
+.user-greeting {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem; /* Tamaño base para móviles */
+}
+
+.carousel.carousel-slider {
+  overflow: hidden;
+  height: auto;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.carousel-item img {
+  border-radius: 8px;
+}
+
+.movie-content {
+  overflow: hidden; /* Soluciona problemas con flotantes */
+}
+
+.movie-image {
+  float: left; /* La imagen se alinea a la izquierda */
+  margin-right: 1rem; /* Espacio entre la imagen y el texto */
+  max-width: 60%; /* Ajustado para móviles */
+}
+
+.movie-image img {
+  width: 100%; /* Ajusta la imagen al contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Opcional */
+}
+
+.movie-text {
+  text-align: justify; /* Justifica el texto */
+}
+
+.carousel .indicators .indicator-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 12px 4px;
+  background-color: black;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+}
+
+.responsive-img {
+  max-height: 30vh; /* Menor altura en móviles */
+}
+.carousel-item img {
+  max-height: 23vh;
+  max-width: 48vh;
+  position: relative;
+  right: 27rem;
+}
+h1{
+  font-size: 2.2rem;
+}
+/* Estilos para pantallas más grandes (tablet y desktop) */
+@media (min-width: 768px) {
+  .carousel-item img {
+    max-height: 25vh;
+    max-width: 40vh;
+    position: relative;
+    right: 2rem;
+  }
+  #root {
+    padding: 0rem 5rem;
+  }
+
+  h1 {
+    font-size: 4rem; /* Más grande en pantallas mayores */
+  }
+
+  .responsive-img {
+    max-height: 50vh;
+  }
+}
+
+@media (min-width: 1350px) {
+  #root {
+    padding: 0rem 20rem;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .carousel.carousel-slider.center {
+    height: 40vh !important;
+    padding: 6rem;
+  }
+}
